@@ -1,6 +1,8 @@
 <div align="center">
 
-# **Arbitor** ### **The SOC Analyst Suite**
+# **Arbitor** 
+
+### **The SOC Analyst Suite**
 
 <br />
   <p>
