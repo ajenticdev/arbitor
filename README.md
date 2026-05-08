@@ -6,10 +6,11 @@
 
 <br />
   <p>
-    <img src="https://img.shields.io/badge/Rust-black?style=for-the-badge&logo=rust" />
+    <img src="https://img.shields.io/badge/Rust-B7410E?style=for-the-badge&logo=rust" />
     <img src="https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript" />
     <img src="https://img.shields.io/badge/Tauri-white?style=for-the-badge&logo=tauri&logoColor=24C8DB" />
     <img src="https://img.shields.io/badge/Cross--Platform-gray?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Security-Local_First-6d8196?style=for-the-badge" />
   </p>
 </div>
 
