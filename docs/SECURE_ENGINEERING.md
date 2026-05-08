@@ -5,11 +5,11 @@ document_role: secure_engineering_contract
 mutation_policy: reviewed_change_only
 ---
 
-# Arbitor secure engineering
+# Arbitor Secure Engineering Requirements
 
 ## Purpose
 
-This document defines secure engineering requirements for Arbitor.
+This document defines Secure Engineering requirements for Arbitor.
 
 Arbitor is security software that processes sensitive operational data. The system must be engineered for defensive use, restricted environments, and auditable behavior.
 
