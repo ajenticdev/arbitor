@@ -122,6 +122,35 @@ handleStuff
 processIt
 ```
 
+## Error Logging Style
+
+Error logging code must be structured, plain, and safe.
+
+Log calls must use stable event codes where the event may be used for monitoring or alerting.
+
+Logs should preserve enough context to diagnose failures without exposing secrets or sensitive operational data.
+
+Logs must not contain:
+
+- passwords
+- API tokens
+- private keys
+- refresh tokens
+- session tokens
+- raw credentials
+- full raw evidence records
+- full report contents
+- unnecessary usernames
+- unnecessary internal hostnames
+- unnecessary internal IP addresses
+- Controlled Unclassified Information (CUI), where applicable
+
+Logging code must not swallow errors silently.
+
+Logging code must not panic on logging failure unless continued operation would be unsafe or misleading.
+
+Remote logging code must handle unavailable destinations, bounded queues, dropped event counts, and redaction failures explicitly.
+
 ## Comment Rule
 
 Comments must be minimal and useful.
