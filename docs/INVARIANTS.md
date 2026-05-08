@@ -849,6 +849,32 @@ Arbitor must not be treated as a production candidate until the following are tr
 
 Production-candidate status does not imply certification, authorization, accreditation, or government approval.
 
+## I56. Error Logging Separation Invariant
+
+Error logs and audit records are separate surfaces.
+
+Audit records preserve authoritative security-relevant action history.
+
+Error logs preserve runtime failures, warnings, diagnostics, forwarding status, and health information.
+
+Error logs must not replace audit records.
+
+Audit records must not be downgraded into ordinary logs.
+
+## I57. Safe Logging Invariant
+
+Logs must not expose secrets, raw credentials, unnecessary sensitive data, raw evidence, full report contents, or Controlled Unclassified Information (CUI) unless explicitly governed.
+
+Sensitive values must be redacted, hashed, tokenized, or omitted before local write or external emission.
+
+## I58. External Log Emission Invariant
+
+External log emission, including syslog emission, is outbound network behavior.
+
+External log emission must be disabled by default, explicitly enabled, visible, auditable, bounded, redacted, and compatible with offline operation.
+
+Failure to reach a remote logging destination must not disable local ingestion, local analysis, local filtering, local reporting, local evidence review, or local export.
+
 ## Final Invariant
 
 If a component cannot preserve authority boundaries, evidence traceability, restricted-environment operation, defensive input handling, and auditable behavior, it must not be added to Arbitor.
