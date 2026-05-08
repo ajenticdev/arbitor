@@ -1,36 +1,31 @@
 <div align="center">
 
-# **Arbitor**  
-### **The SOC Analyst Suite**
+# **Arbitor** ### **The SOC Analyst Suite**
 
-<br>
-
-<!-- Shields.io badges -->
-<p>
-  <img src="https://img.shields.io/badge/Rust-Authoritative_Core-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/TypeScript-UI_Layer-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Tauri-Desktop_App-yellow?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Security-Local_First-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Compliance-NIST_%7C_CISA-critical?style=for-the-badge" />
-</p>
-
+<br />
+  <p>
+    <img src="https://img.shields.io/badge/Rust-black?style=for-the-badge&logo=rust" />
+    <img src="https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript" />
+    <img src="https://img.shields.io/badge/Tauri-white?style=for-the-badge&logo=tauri&logoColor=24C8DB" />
+    <img src="https://img.shields.io/badge/Cross--Platform-gray?style=for-the-badge" />
+  </p>
 </div>
 
 ---
 
-## **Overview**
+## Overview
 
-Arbitor is a **local‑first security analysis suite** built for SOC analysts, incident responders, and IT security leadership. It ingests logs from Splunk, Palo Alto Networks, Cisco, Symantec, Windows Event Logs, Linux syslog, and other enterprise telemetry sources — then transforms them into a unified, evidence‑preserving investigation workspace.
+Arbitor is a **local‑first security analysis suite** built for SOC analysts, incident responders, and security leadership. It ingests telemetry from enterprise sources—including industry standard tools like: Splunk, Palo Alto Networks, Cisco, Fortinet, and system logs—normalizing disparate data into a unified, evidence‑preserving investigation workspace.
 
-Arbitor is designed for organizations that must meet **NIST**, **CISA Secure‑by‑Design**, and **DoD‑aligned** operational expectations. It provides a controlled, offline‑capable environment where analysts can investigate incidents without exposing sensitive data to cloud services, third‑party processors, or ungoverned automation.
+Designed for high-compliance environments (NIST, CISA, and DoD-aligned frameworks), Arbitor provides a controlled, offline-capable sandbox. This ensures sensitive investigative data remains on-premises, eliminating the risks inherent in third-party cloud processing or ungoverned automation.
 
-Arbitor is not a SIEM replacement. It is a **precision investigation tool** that strengthens the analyst’s ability to understand what happened, why it happened, and which evidence supports each conclusion.
+Arbitor is a **precision investigation tool**, not a SIEM replacement. It is purpose-built to enhance an analyst's ability to reconstruct events, establish causality, and isolate the specific evidence required to support conclusive findings.
 
 ---
 
-## **Why IT Leaders Choose Arbitor**
+## Why IT Leaders Choose Arbitor
 
-### **1. Built for NIST‑Aligned Security Operations**
+### 1. Built for NIST‑Aligned Security Operations
 
 Arbitor supports workflows aligned with:
 
@@ -43,7 +38,7 @@ Arbitor does not claim certification — instead, it provides **evidence‑backe
 
 ---
 
-### **2. CISA Secure‑by‑Design Principles, Implemented**
+### 2. CISA Secure‑by‑Design Principles, Implemented
 
 Arbitor is engineered around CISA’s Secure‑by‑Design expectations:
 
@@ -57,7 +52,7 @@ This makes Arbitor suitable for regulated, air‑gapped, or high‑assurance env
 
 ---
 
-### **3. Evidence‑Preserving Investigation Model**
+### 3. Evidence‑Preserving Investigation Model
 
 Arbitor maintains a strict chain of custody:
 
@@ -70,7 +65,7 @@ This ensures investigations remain defensible, auditable, and reviewable.
 
 ---
 
-### **4. Multi‑Source Security Telemetry, Unified**
+### 4. Multi‑Source Security Telemetry, Unified
 
 Arbitor ingests:
 
@@ -86,7 +81,7 @@ All sources are normalized into a **common event model**, enabling cross‑vendo
 
 ---
 
-### **5. Local‑First, Zero‑Trust‑in‑Cloud**
+### 5. Local‑First, Zero‑Trust‑in‑Cloud
 
 Arbitor runs entirely on the analyst’s workstation:
 
@@ -100,7 +95,7 @@ This reduces supply‑chain risk and supports environments with strict data‑so
 
 ---
 
-### **6. Designed for Analyst Productivity**
+### 6. Designed for Analyst Productivity
 
 Arbitor provides:
 
@@ -116,7 +111,7 @@ The UI is intentionally simple, predictable, and optimized for investigation flo
 
 ---
 
-## **Technology Stack**
+## Technology Stack
 
 Arbitor uses a **Rust authoritative core** with a **TypeScript UI** delivered through **Tauri**.
 
