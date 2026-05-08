@@ -1,5 +1,3 @@
-<!-- docs/INVARIANTS.md -->
-
 ---
 truth_dimension: permanent
 authority_level: normative
