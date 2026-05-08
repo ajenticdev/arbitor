@@ -168,6 +168,45 @@ No Tauri command may accept arbitrary instructions from the UI and execute them 
 
 No Tauri command may expose secrets, broad filesystem access, or uncontrolled network behavior.
 
+
+Also patch the existing permanent truth documents with these sections.
+
+
+## Error Logging Architecture
+
+Arbitor must support structured local error logging.
+
+Arbitor should support optional emission to external logging systems, including syslog servers and approved monitoring tools.
+
+Error logging is distinct from audit records.
+
+Audit records preserve authoritative security-relevant action history.
+
+Error logs preserve runtime failure, warning, diagnostic, forwarding, and health information.
+
+The Rust core owns authoritative logging behavior.
+
+TypeScript may display logging status and submit typed logging configuration requests, but it must not directly emit authoritative application logs.
+
+Remote log emission is outbound network behavior and must follow Arbitor network rules.
+
+Remote log emission must be:
+
+- disabled by default
+- explicitly enabled
+- configured through approved paths
+- visible to the operator or administrator
+- auditable
+- bounded
+- redacted before transmission
+- compatible with offline operation
+
+Logs must not expose secrets, raw credentials, unnecessary sensitive data, raw evidence, full report contents, or Controlled Unclassified Information (CUI) unless explicitly governed.
+
+Logging failures must be surfaced locally where practical.
+
+Failure to reach a remote logging destination must not disable local ingestion, local analysis, local filtering, local reporting, local evidence review, or local export.
+
 ## System Layers
 
 ```text
